@@ -1,61 +1,86 @@
-# [Your Name] - Data Analysis Portfolio
+# Gabriel Agana Anongwin - Data & HealthTech Portfolio
 
-Welcome! This repository contains the complete template for a professional, one-page data analysis portfolio website, hosted for free on GitHub Pages.
+Welcome! This repository contains my professional, one-page portfolio website, hosted for free on GitHub Pages: [gabrielagana123.github.io](https://gabrielagana123.github.io)
 
-## About This Portfolio Template
+I combine **healthcare expertise** as a Doctor of Pharmacy with **data science and analytics** skills to create innovative solutions in HealthTech, AI, and business intelligence.
 
-This portfolio is designed to demonstrate skills in:
+---
+
+## About This Portfolio
+
+This portfolio showcases my work in:
+
+- HealthTech innovation and pharmacy operations
 - Data visualization and storytelling
-- Data modeling and analysis
-- Creating interactive, professional dashboards
-- Transforming complex data into actionable insights
+- Predictive analytics and machine learning
+- Transforming complex healthcare and business data into actionable insights
+
+---
 
 ## 🚀 Projects
 
-This template is set up to showcase your best work. You can easily customize the project cards in the `index.html` file.
+This portfolio highlights some of my key projects:
 
-### Project Title One
-*A brief description of your project, the tools used, and the key insights derived.*
+### Renolab
+AI-driven kidney disease prediction and early detection system. Uses clinical data and machine learning to identify at-risk patients.
 
-### Project Title Two
-*A brief description of your project, the tools used, and the key insights derived.*
+### Vuzima / Kemia
+Offline-first pharmacy operations system for African pharmacies. Helps with inventory tracking, stock-out prevention, and supply chain optimization.
 
-### Project Title Three
-*A brief description of your project, the tools used, and the key insights derived.*
+### Sautiq
+Media and marketing solutions for smallholder businesses. Includes branding, photography, and digital marketing strategies.
 
+### Other Projects
+Various healthcare, EdTech, and business analytics projects leveraging Python, Power BI, and Excel.
+
+---
 
 ## 🛠️ Skills
 
-Update the `index.html` file to reflect your personal technical skillset. The template is organized into key categories:
+**Pharmacy & Healthcare:**
+- Scientific research & writing
+- Patient counseling
+- Clinical rotations
+- Medication management
 
-- **Data Visualization**: Power BI, Tableau, Matplotlib, etc.
-- **Data Analysis**: SQL, Python (Pandas), R, Excel, etc.
-- **Data Modeling**: Power Query, DAX, Star Schema Design, etc.
-- **Tools**: List any other relevant tools like Power BI Service, specific cloud platforms, etc.
+**Data Science & Analytics:**
+- Python (Pandas, NumPy)
+- SQL
+- Power BI
+- Machine Learning
+- Data visualization (Tableau, Excel, Looker Studio)
 
-## 💡 How to Use This Template
+**Tools & Technologies:**
+- Git & GitHub
+- Power Query, DAX, Star Schema
+- Cloud platforms & dashboards
 
-Creating your own portfolio from this template is a simple, four-step process.
+---
 
-### 1. Create a New Repository from this Template
-Click the green **"Use this template"** button at the top of this repository page, then select **"Create a new repository"**.
+## 🏆 Honors & Awards
 
-### 2. Name Your Repository for GitHub Pages
-This is the most important step. To turn your portfolio into a live website, you **must** name your new repository in the following format:
-`your-username.github.io`
-*(Replace `your-username` with your actual GitHub username.)*
+- Most Innovative Pharmacy Student of the Year 2024/2025  
+- Appointee of the Year - Ghana Pharmaceutical Student Association, KNUST 2024/2025  
+- Bronze Medal at the Africa Division Final of the CICSI 2025  
+- Overall Best Form 1 Student in West Africa SHS, Adenta  
+- Seed Funding from Mastercard Foundation  
 
-### 3. Customize Your Portfolio
-Open the `index.html` file and begin personalizing it. The file contains helpful `<!--💡UPDATE: ... -->` comments to guide you on where to change:
-- Your name and title
-- Social media links
-- The "About Me" section
-- Your project titles, descriptions, and links
-- Your list of skills
+---
 
-### 4. Add Your Files
-- Upload your profile photo and project preview images to the `assets/images/` folder.
-- Upload your CV (e.g., in PDF format) to the `assets/` folder.
-- Create your favicon and add it to the root folder.
+## 💡 How to Use This Repository
 
-Once you commit your changes, your new portfolio website will be live at `https://your-username.github.io` within a few minutes!
+1. This repo contains all the files for my **portfolio website**:
+   - `index.html` → Main website file  
+   - `assets/` → Folder containing images, CSS, JS, and CV  
+   - `favicon-32x32.png` → Website icon  
+   - `README.md` → This file  
+
+2. To view my portfolio online: [https://gabrielagana123.github.io](https://gabrielagana123.github.io)
+
+3. To customize for your own portfolio (if using as a template):
+   - Edit `index.html` to add your details, projects, and skills
+   - Replace images and CV in `assets/` folder
+
+---
+
+> **Note:** To host a GitHub Pages website, your repository **must be public**. Private repositories require a paid plan for GitHub Pages hosting.  
