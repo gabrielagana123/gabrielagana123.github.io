@@ -234,3 +234,126 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* ===== FINAL OVERRIDE: PREMIUM BLACK THEME ===== */
+
+/* Force full dark background */
+body {
+    background: #000000 !important;
+    color: #ffffff !important;
+}
+
+/* Sections */
+.section {
+    background: #000000 !important;
+}
+
+/* Headings */
+.section h2 {
+    color: #ffffff !important;
+}
+
+/* ===== ABOUT SECTION FIX (MAIN PROBLEM) ===== */
+
+.about-card {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    background: #111111 !important;
+    padding: 40px;
+    border-radius: 14px;
+    border: 1px solid #222;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.9);
+}
+
+/* Image bigger */
+.about-image img {
+    width: 340px;
+    border-radius: 12px;
+}
+
+/* TEXT FIX (THIS WAS YOUR ISSUE) */
+.about-text p {
+    color: #ffffff !important;  /* FORCE WHITE */
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Hidden text */
+.hidden-text {
+    display: none;
+}
+
+/* Read more button */
+.btn-read {
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #22c55e;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* ===== PROJECT CARDS ===== */
+
+.project-card {
+    background: #111111 !important;
+    border: 1px solid #222;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.9);
+}
+
+.project-card-content h3 {
+    color: #ffffff !important;
+}
+
+.project-card-content p {
+    color: #cccccc !important;
+}
+
+/* ===== NAVBAR ===== */
+
+nav {
+    background: rgba(0,0,0,0.9) !important;
+    border-bottom: 1px solid #222;
+}
+
+nav ul li a {
+    color: #ffffff !important;
+}
+
+/* ===== SKILLS ===== */
+
+.skills-table {
+    background: #111111 !important;
+    border: 1px solid #222;
+}
+
+.skill-list li {
+    color: #cccccc !important;
+}
+
+/* ===== CONTACT ===== */
+
+.contact-form {
+    background: #111111 !important;
+    border: 1px solid #222;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background: #000000;
+    color: #ffffff;
+    border: 1px solid #333;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    background: #000000 !important;
+    border-top: 1px solid #222;
+}
+
+footer p {
+    color: #888;
+}
