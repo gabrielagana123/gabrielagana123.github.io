@@ -50,3 +50,16 @@ function embedPowerBIDashboard() {
 
 // Initialize any additional components
 document.addEventListener('DOMContentLoaded', embedPowerBIDashboard);
+
+function toggleText() {
+    const moreText = document.getElementById("more-text");
+    const button = document.querySelector(".btn-read");
+
+    if (moreText.style.display === "block") {
+        moreText.style.display = "none";
+        button.innerText = "Read More";
+    } else {
+        moreText.style.display = "block";
+        button.innerText = "Show Less";
+    }
+}
