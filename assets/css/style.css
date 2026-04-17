@@ -384,6 +384,8 @@ nav ul li a:hover {
 
 /* ===== HERO BACKGROUND SLIDER (PREMIUM) ===== */
 
+/* ===== HERO BACKGROUND SLIDER (PREMIUM) ===== */
+
 .hero-bg {
     position: relative;
     overflow: hidden;
@@ -395,10 +397,8 @@ nav ul li a:hover {
     position: absolute;
     inset: 0;
 
-    background-size: cover; /* keeps full screen */
-    background-repeat: no-repeat;
-
-    background-position: center 30%; /* 👈 THIS IS THE KEY */
+    background-size: cover;
+    background-position: center;
 
     animation: heroSlider 18s infinite ease-in-out;
     z-index: 0;
