@@ -434,3 +434,53 @@ nav ul li a:hover {
         background-image: url("../images/honors1.jpg");
     }
 }
+
+/* ===== JOURNEY SECTION ===== */
+
+.journey-block {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.journey-block img {
+    width: 320px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
+
+.journey-block div {
+    flex: 1;
+}
+
+.journey-block h3 {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.journey-block p {
+    color: #cbd5f5;
+    line-height: 1.7;
+}
+
+/* alternating layout */
+.journey-block.reverse {
+    flex-direction: row-reverse;
+}
+
+/* mobile */
+@media(max-width:768px){
+    .journey-block,
+    .journey-block.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .journey-block img {
+        width: 100%;
+        height: auto;
+    }
+}
