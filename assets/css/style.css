@@ -395,8 +395,10 @@ nav ul li a:hover {
     position: absolute;
     inset: 0;
 
-    background-size: cover;
+    background-size: contain; /* keeps full image */
     background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
 
     animation: heroSlider 18s infinite ease-in-out;
     z-index: 0;
