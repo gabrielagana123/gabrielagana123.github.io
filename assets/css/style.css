@@ -47,11 +47,16 @@ header {
 }
 
 header h1 {
-    font-family: var(--font-heading);
-    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
     font-weight: 700;
-    letter-spacing: 1px;
-    color: white;
+    letter-spacing: 1.5px;
+
+    background: linear-gradient(90deg, #ffffff, #94a3b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow: 0 10px 40px rgba(255,255,255,0.1);
 }
 
 header p {
@@ -119,6 +124,11 @@ nav ul li a:hover {
     font-size: 2.6rem;
     margin-bottom: 60px;
     font-family: var(--font-heading);
+}
+
+.section {
+    padding: 100px 0;
+    border-top: 1px solid rgba(255,255,255,0.05);
 }
 
 /* --- ABOUT (GLASS CARD EFFECT) --- */
@@ -228,17 +238,42 @@ nav ul li a:hover {
 /* --- SKILLS --- */
 .skills-table {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
     background: var(--bg-card);
     padding: 40px;
     border-radius: 14px;
 }
 
+/* Bigger icons */
+.skill-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.skill-header i {
+    font-size: 2.2rem;
+    color: var(--accent);
+}
+
+.skill-header h3 {
+    font-size: 1.5rem;
+}
+
+/* Clean list */
 .skill-list li {
     list-style: none;
     padding: 10px 0;
     color: var(--text-secondary);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.skill-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 /* --- CONTACT --- */
@@ -282,4 +317,24 @@ footer {
     header h1 {
         font-size: 2.5rem;
     }
+}
+
+
+nav ul li a {
+    color: var(--text-primary);
+    padding: 15px 22px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+nav ul li a i {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+nav ul li a:hover {
+    color: var(--accent);
 }
