@@ -602,3 +602,110 @@ nav ul li a:hover {
         margin-bottom: 5px;
     }
 }
+
+
+/* =========================
+   FINAL FIX PACK (DO NOT EDIT ABOVE THIS)
+========================= */
+
+/* ===== FIX QUICK LINKS (FORCE MOBILE STABILITY) ===== */
+@media (max-width: 768px) {
+
+    .quick-links {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        padding: 0 10px;
+    }
+
+    .quick-links a {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 12px 6px;
+        font-size: 0.75rem;
+        border-radius: 10px;
+        background: rgba(255,255,255,0.05);
+    }
+
+    .quick-links a i {
+        font-size: 1.4rem;
+        margin-bottom: 6px;
+    }
+}
+
+
+/* ===== FIX RENOLAB JOURNEY MOBILE ===== */
+@media (max-width: 768px) {
+
+    .journey-block {
+        flex-direction: column !important;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .journey-block.reverse {
+        flex-direction: column !important;
+    }
+
+    .journey-block img {
+        width: 100%;
+        height: auto;
+        max-height: 260px;
+        object-fit: cover;
+    }
+
+    .journey-block div {
+        width: 100%;
+    }
+}
+
+
+/* ===== FIX HERO IMAGE CROPPING ===== */
+.hero-renolab::before {
+    background-size: cover;
+    background-position: center top; /* THIS FIXES HEAD CUTTING */
+}
+
+
+/* ===== FIX PROBLEM BACKGROUND NOT SHOWING ===== */
+.problem-section {
+    position: relative !important;
+    background-image: url("../images/kidney-problem.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.problem-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    z-index: 1;
+}
+
+.problem-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ===== GENERAL MOBILE TEXT FIX ===== */
+@media (max-width: 768px) {
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+
+    .section p {
+        font-size: 0.95rem;
+        padding: 0 10px;
+    }
+}
