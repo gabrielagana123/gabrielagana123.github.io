@@ -484,3 +484,34 @@ nav ul li a:hover {
         height: auto;
     }
 }
+
+
+
+/* ===== MOBILE NAV FIX ===== */
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-wrap: wrap; /* allow wrapping instead of squeezing */
+        gap: 5px;
+        padding: 5px;
+    }
+
+    nav ul li {
+        flex: 1 1 30%; /* 3 items per row */
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: flex;
+        flex-direction: column; /* icon above text */
+        align-items: center;
+        justify-content: center;
+        padding: 10px 5px;
+        font-size: 0.8rem;
+    }
+
+    nav ul li a i {
+        font-size: 1.2rem; /* bigger icons */
+        margin-bottom: 4px;
+    }
+}
