@@ -338,3 +338,25 @@ nav ul li a i {
 nav ul li a:hover {
     color: var(--accent);
 }
+
+
+/* Section spacing */
+.section h2 {
+    margin-bottom: 30px;
+}
+
+/* Centered text blocks */
+.section p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* CTA button upgrade */
+.btn {
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(34,197,94,0.4);
+}
