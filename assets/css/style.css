@@ -471,6 +471,33 @@ nav ul li a:hover {
     flex-direction: row-reverse;
 }
 
+
+/* ===== PROBLEM SECTION BACKGROUND ===== */
+
+.problem-section {
+    position: relative;
+    background: url('../images/kidney-problem.jpg') center/cover no-repeat;
+    color: white;
+}
+
+.problem-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+}
+
+.problem-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.problem-section p {
+    max-width: 700px;
+    margin: auto;
+    color: #e5e7eb;
+}
+
 /* ===== QUICK LINKS (DESKTOP) ===== */
 .quick-links {
     display: flex;
