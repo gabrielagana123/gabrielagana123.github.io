@@ -361,3 +361,53 @@ nav ul li a:hover {
     box-shadow: 0 10px 25px rgba(34,197,94,0.4);
 }
 
+
+/* ===== HONORS BACKGROUND SLIDER ===== */
+
+.honors-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+.honors-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    animation: bgSlider 15s infinite;
+    z-index: 0;
+}
+
+/* Dark overlay */
+.honors-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    z-index: 1;
+}
+
+/* Keep content above */
+.honors-bg .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Animation */
+@keyframes bgSlider {
+    0% {
+        background-image: url("../images/honors1.jpg");
+    }
+    33% {
+        background-image: url("../images/honors2.jpg");
+    }
+    66% {
+        background-image: url("../images/honors3.jpg");
+    }
+    100% {
+        background-image: url("../images/honors1.jpg");
+    }
+}
