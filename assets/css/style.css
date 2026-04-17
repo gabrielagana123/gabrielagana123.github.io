@@ -734,3 +734,35 @@ nav ul li a:hover {
         font-size: 0.9rem;
     }
 }
+
+
+
+/* ===== FINAL MOBILE NAV FIX (DO NOT MOVE) ===== */
+@media (max-width: 768px) {
+
+    nav ul {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr); /* 3 per row */
+        gap: 5px;
+        padding: 8px;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        flex-direction: column !important; /* icon above text */
+        justify-content: center;
+        align-items: center;
+
+        padding: 10px 5px;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+
+    nav ul li a i {
+        font-size: 1.2rem; /* bigger icons */
+        margin-bottom: 4px;
+    }
+}
