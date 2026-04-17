@@ -66,10 +66,11 @@ header p {
 } */
 
 header h1 {
-    font-size: 3.8rem;
+    font-size: 4rem;
     font-weight: 700;
     letter-spacing: 1px;
     color: #ffffff;
+    text-shadow: 0 10px 40px rgba(0,0,0,0.9);
 }
 
 header p {
@@ -381,31 +382,27 @@ nav ul li a:hover {
 
 /* ===== HERO COLLAGE BACKGROUND ===== */
 
+/* ===== HERO BACKGROUND SLIDER (PREMIUM) ===== */
+
 .hero-bg {
     position: relative;
     overflow: hidden;
 }
 
-/* 3-image collage */
+/* Background layer */
 .hero-bg::before {
     content: "";
     position: absolute;
     inset: 0;
 
-    background-image: 
-        url("../images/honors1.jpg"),
-        url("../images/honors2.jpg"),
-        url("../images/honors3.jpg");
+    background-size: cover;
+    background-position: center;
 
-    background-size: 33.33% 100%, 33.33% 100%, 33.33% 100%;
-    background-position: left, center, right;
-    background-repeat: no-repeat;
-
-    filter: brightness(0.45);
+    animation: heroSlider 18s infinite ease-in-out;
     z-index: 0;
 }
 
-/* Dark overlay for readability */
+/* Dark overlay */
 .hero-bg::after {
     content: "";
     position: absolute;
@@ -414,8 +411,24 @@ nav ul li a:hover {
     z-index: 1;
 }
 
-/* Make content sit on top */
+/* Keep content above */
 .hero-bg .container {
     position: relative;
     z-index: 2;
+}
+
+/* SLIDER ANIMATION */
+@keyframes heroSlider {
+    0% {
+        background-image: url("../images/honors1.jpg");
+    }
+    33% {
+        background-image: url("../images/honors2.jpg");
+    }
+    66% {
+        background-image: url("../images/honors3.jpg");
+    }
+    100% {
+        background-image: url("../images/honors1.jpg");
+    }
 }
